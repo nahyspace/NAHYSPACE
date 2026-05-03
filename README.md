@@ -69,6 +69,7 @@ ________________________________________________________________________________
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nahyspace&stats_format=bytes)
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
 --
 
 ### 📫 Como me encontrar
