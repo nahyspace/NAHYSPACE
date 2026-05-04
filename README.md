@@ -73,7 +73,20 @@ ________________________________________________________________________________
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nahyspace&stats_format=bytes)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
+
 --
+
+<h2 align="center">🌍 LANGUAGE / IDIOMAS </h2> 
+
+* 🇪🇸 **Espanhol:** Avançado (C1)
+* 🇺🇸 **Inglês:** Intermediário (B1)
+* 🇫🇷 **Francês:** Básico (A2)
+* 🇮🇹 **Italiano:** Iniciante (A1)
+
+
+<h2 align="center">
+
+___________________________________________________________________________________________________________________________________________________________________
 
 ### 📫 Como me encontrar
 - **LinkedIn:** [Clique aqui para meu perfil](https://linkedin.com)
