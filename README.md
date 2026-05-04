@@ -99,62 +99,6 @@ ________________________________________________________________________________
 </p>
 
 
-Build a real-time streaming data chart using the HTML Canvas API. No libraries, no CDN scripts — zero dependencies.
-
-VISUAL DESIGN
-- Dark background (#0a0a0a) with a subtle dot-grid overlay (1px dots at 40px spacing, rgba(255,255,255,0.03))
-- Three data series as smooth cubic bezier curves:
-  1. CPU Load — cyan (#00c4ff), range 0–100%
-  2. Memory Usage — emerald (#00ff88), range 0–16 GB
-  3. Response Time — violet (#a855f7), range 0–500 ms
-- Semi-transparent gradient fill beneath each line, fading from 20% opacity at the line to transparent at the chart floor
-- Soft glow on each line using canvas shadowBlur (8px, line color at 40% opacity)
-- 2px line width with round lineCap and lineJoin
-- Render at window.devicePixelRatio for crisp Retina/HiDPI output
-
-CHART LAYOUT
-- Rolling 60-second time window with data scrolling right to left
-- Y-axis on the left with 5 horizontal gridlines (dashed 1px, rgba(255,255,255,0.06))
-- X-axis along the bottom with time labels at 15-second intervals: "-60s", "-45s", "-30s", "-15s", "now"
-- Padding: 60px left, 30px bottom, 20px right, 12px top
-
-LEGEND
-- Anchored top-right inside the chart area
-- Each entry: 6px colored circle + series name + current live value with unit
-- Background: rgba(0,0,0,0.7), border-radius 8px, 1px border at rgba(255,255,255,0.1)
-- Font: 11px system-ui, color rgba(255,255,255,0.7)
-
-CROSSHAIR & TOOLTIP
-- On mousemove: draw a vertical dashed line from top to bottom of the chart area
-- Show a tooltip card near the cursor with the timestamp and interpolated values for all three series
-- Each value row has a small colored dot matching its series
-- Card style: dark background, 8px border-radius, subtle border, drop shadow
-- Hide everything on mouseleave
-
-DATA SIMULATION
-- Generate a new data point every 500ms
-- CPU: slow sine wave (~30s period) centered around 40–60% plus ±10% random noise
-- Memory: gradual random walk between 4–12 GB with momentum (velocity damped at 0.95)
-- Latency: stable ~80ms baseline with ~3% chance per tick of a spike to 200–400ms
-- Smooth cubic interpolation between points for fluid motion
-
-TECHNICAL REQUIREMENTS
-- Use requestAnimationFrame for the render loop (target 60fps)
-- Use ResizeObserver to resize the canvas when its container changes size
-- Fixed-size data array — drop oldest points that exceed the 60-second window
-- Layered render passes: background → grid → gradient fills → lines → legend → crosshair/tooltip
-- Click the chart to pause/resume the data stream
-- Expose a destroy() method that cancels animation and disconnects observers
-
-OUTPUT
-- Single HTML file with embedded <style> and <script>
-- Chart fills its container: width 100%, height 400px default, min-height 250px
-- Production-grade aesthetic — should feel like a professional observability dashboard panel
-
-
-
-
-
 
 
 
