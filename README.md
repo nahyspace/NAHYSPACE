@@ -9,8 +9,8 @@ ________________________________________________________________________________
 
 <h6 align="center"
   
-![BLOG](https://img.shields.io/badge/Instagram-414141?style=for-the-badge&logo=instagram&logoColor=white)
-![BLOG](https://img.shields.io/badge/YouTube-414141?style=for-the-badge&logo=youtube&logoColor=white)
+
+
 ![BLOG](https://img.shields.io/badge/LinkedIn-414141?style=for-the-badge&logo=linkedin&logoColor=white)
 
 
